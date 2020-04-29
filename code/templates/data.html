@@ -1,0 +1,86 @@
+<!doctype html>
+<title>Plantaris Monitor Web</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<style>
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+/*  width: 60%;
+  margin: 0 auto;*/
+}
+.main-column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.main-row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2{
+  overflow: auto;
+}
+
+h2 span{
+
+   float: left;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+h2 img{
+   float: left;
+   vertical-align: middle;
+}
+</style>
+
+<body>
+  <div class="header">
+    <h2><img style="width: 10%;" src="{{url_for('static', filename='img/plantaris.jpg')}}" />
+	    <span>Plantaris Monitor Web<br/><span style="font-size: 60%;">Making your plants happy since 2019</span></span>
+    </h2>
+  </div>
+  <div class="row justify-content-center">
+    <div class="main-row">
+      <div class="main-column" style="margin-top: 5%;">
+        {% if lines and last_line %}
+	  <b>Last logs</b>
+          <table class="table">
+            <tr>
+        	<th scope="col">Time</th>
+        	<th scope="col">Relay</th>
+        	<th scope="col">Moisture</th>
+        	<th scope="col">Water level</th>
+            </tr>
+          {% for line in lines %}
+          <tr>
+          	<td>{{ line.split(";")[0] }}</td>
+          	<td>{{ line.split(";")[2] }}</td>
+          	<td>{{ line.split(";")[3] }}</td>
+          	<td>{{ line.split(";")[4] }}</td>
+          </tr>
+          {%endfor%}
+          </table>
+        {% endif %}
+      </div>
+      <div class="main-column" style="margin-top: 5%;">
+	  <b>Current state</b>
+	  <ul>
+		  <li><b>Date: </b>{{ last_line.split(";")[0] }}</li>
+		  <li><b>Relay: </b>{{ last_line.split(";")[2] }}</li>
+		  <li><b>Moisture: </b>{{ last_line.split(";")[3] }}</li>
+		  <li><b>Water level: </b>{{ last_line.split(";")[4] }}</li>
+	  </ul>
+	  <b>Moisture</b>
+	  <img src="/plot.png" alt="Plot" />
+      </div>
+    </div>
+  </div>
+</body>

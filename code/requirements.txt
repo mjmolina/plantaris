@@ -1,0 +1,6 @@
+pyserial
+python-telegram-bot
+emoji
+opencv-python
+matplotlib
+pandas
