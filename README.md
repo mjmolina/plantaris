@@ -1,5 +1,5 @@
 # Plantaris
-# PyCon US 2020 :herb: :seedling: :yellow_heart: 🐍
+## PyCon US 2020 :herb: :seedling: :yellow_heart: 🐍
 
 <img src="code/static/img/plantaris.jpg" width="200px"/>
 
