@@ -3,7 +3,7 @@
 ![alt text](https://github.com/mjmolina/plantaris/blob/[branch]/image.jpg?raw=true)
 
 
-## PyCon US 2020  :herb: :seedling: :yellow_heart: 🐍
+## PyCon US 2020   :herb: :seedling: :yellow_heart: 🐍
 
 Most people around the world are getting more and more interested in living a long and healthy life nowadays. And many studies have proven that growing house plants, as long as being a trend, improves health.
 The truth is, we are so busy with work, and even when we get home, that we do not have enough time to properly water our plants when they need it.
