@@ -4,14 +4,14 @@ On this directory you can find all the different scripts used
 during the talk.
 
 Make sure to install all the requirements for the telegram bot,
-flask application, and Circuit Playground Express monitor script.
+flask application, and Circuit Playground Express (CPX) monitor script.
 
-## Circuit python
+## CircuitPython
 
 These codes need to be placed on the internal memory of your CPX
 with the name `code.py`.
 
-Please make sure you have configure the scripts before running them
+Please make sure you have configured the scripts before running them
 since each component needs to be defined inside the code by the exact
 port being used.
 
@@ -32,14 +32,24 @@ Files:
  * [system2_code.py](system2_code.py)
  * [outfinal.wav](outfinal.wav)
 
-This systems uses the Crickit and CPX boards.
+This system uses the Crickit and CPX boards.
 Since it is a bit more complicated compared the first version,
 a general class is provided to encapsulate all the functionality
 of the system.
 
 There is also a WAV file that needs to be copy to the board memory
 to get the voice notification when the water level is low.
-
+This file was generated using the [gTTS module](https://github.com/pndurette/gTTS),
+but the transformation from MP3 to WAV has some extra steps:
+* First I use `ffmpeg` to get the first WAV:
+  ```
+  ffmpeg -i out.mp3 out.wav
+  ```
+* Then I used `sox` to get the proper compatible WAV file with the CircuitPython
+  examples:
+  ```
+  sox --show-progress -v 0.2 out.wav -t wav --endian little -c 1 -r 22050  outfinal.wav
+  ```
 
 ## Monitor System
 
@@ -89,7 +99,7 @@ This simple application relies on only one template called `templates/data.html`
 and in some elements from **bootstrap** that can be found onf the `static`
 directory.
 
-<img src="flask.jpeg" width="300px" />
+<img src="flask.jpeg" width="450px" />
 
 ## Telegram bot
 

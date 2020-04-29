@@ -4,7 +4,7 @@
 
 ### System 1
 
-<img src="img/sys1_components.jpg" width="200px" />
+<img src="img/sys1_components.jpg" width="400px" />
 
 * **A**: Relay 5V (brand: Songle)
 * **B**: Alligator Test Leads (brand: Pimoroni)
@@ -16,7 +16,7 @@
 
 ### System 2
 
-<img src="img/sys2_components.jpg" width="200px" />
+<img src="img/sys2_components.jpg" width="400px" />
 
 * **A**: Relay 5V (brand: Songle)
 * **B**: Water level sensor 5V (brand: Aideepen) 
@@ -31,14 +31,15 @@
 * **K**: USB A cable (brand: MicroB)
 * **L**: Mini Speaker 4Ω (brand: Pimoroni)
 
-### New component for IoT (using Circuitpython):
+### System 2 with IoT
 
-<img src="img/portal.jpg" width="200px" />
+<img src="img/pi.jpg" width="400px" />
+
+Raspberry pi 4
+
+### New component for IoT
+
+<img src="img/portal.jpg" width="400px" />
 
 Pyportal (brand: Adafruit)
 
-### System 2 with IoT (using python): 
-
-<img src="img/pi.jpg" width="200px" />
-
-Raspberry pi 4
