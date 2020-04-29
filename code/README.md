@@ -89,6 +89,8 @@ This simple application relies on only one template called `templates/data.html`
 and in some elements from **bootstrap** that can be found onf the `static`
 directory.
 
+<img src="flask.jpeg" width="300px" />
+
 ## Telegram bot
 
 Files:

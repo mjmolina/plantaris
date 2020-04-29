@@ -14,8 +14,10 @@ You can watch the talk [here](https://youtu.be/8STo1-rRV1E)!.
 Check the [code/](code/) directory to see all the examples used in the talk
 and project.
 
-Check the [material/](material/) directory to get the information related
+Check the [materials/](materials/) directory to get the information related
 components, configuration, photos, and more!
+
+<img src="system.jpg" width="400px"/>
 
 ## Talk description
 
