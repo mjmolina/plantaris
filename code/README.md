@@ -21,7 +21,7 @@ you need to adapt the number limits of each situation.
 ### System 1
 
 Files:
- * [system2_code.py](system2_code.py)
+ * [system1_code.py](system1_code.py)
 
 This is a simple code that only reads the moisture sensor,
 checks the level and activate the relay to run the water pump.
