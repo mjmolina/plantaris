@@ -1,13 +1,10 @@
 # Plantaris
 ## PyCon US 2020 :herb: :seedling: :yellow_heart: 🐍
 
-<img src="code/static/img/plantaris.jpg" width="200px"/>
-
-This repository contains all the information related to my PyConUS 2020
-talk entitled:
-
 **How to build an intelligent “indoor garden” with microcontrollers,
 CircuitPython, and IoT.**
+
+<img src="code/static/img/plantaris.jpg" width="200px"/>
 
 * You can watch the talk [here](https://youtu.be/8STo1-rRV1E)!.
 * Check the [code/](code/) directory to see all the examples used in the talk
