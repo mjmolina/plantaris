@@ -6,8 +6,8 @@
 This repository contains all the information related to my PyConUS 2020
 talk entitled:
 
-"How to build an intelligent “indoor garden” with microcontrollers,
-CircuitPython, and IoT."
+**"How to build an intelligent “indoor garden” with microcontrollers,
+CircuitPython, and IoT." 
 
 You can watch the talk [here](https://youtu.be/8STo1-rRV1E)!.
 
