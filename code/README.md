@@ -11,12 +11,40 @@ flask application, and Circuit Playground Express monitor script.
 These codes need to be placed on the internal memory of your CPX
 with the name `code.py`.
 
+Please make sure you have configure the scripts before running them
+since each component needs to be defined inside the code by the exact
+port being used.
+
+Additionally, depending on your sensors, and configuration,
+you need to adapt the number limits of each situation.
+
 ### System 1
+
+Files:
+ * [system2_code.py](system2_code.py)
+
+This is a simple code that only reads the moisture sensor,
+checks the level and activate the relay to run the water pump.
 
 ### System 2
 
+Files:
+ * [system2_code.py](system2_code.py)
+ * [outfinal.wav](outfinal.wav)
+
+This systems uses the Crickit and CPX boards.
+Since it is a bit more complicated compared the first version,
+a general class is provided to encapsulate all the functionality
+of the system.
+
+There is also a WAV file that needs to be copy to the board memory
+to get the voice notification when the water level is low.
+
 
 ## Monitor System
+
+Files:
+ * [monitor_system.py](monitor_system.py)
 
 This is the main script that reads the output from the CPX system
 and store it locally on your Raspberry Pi device.
@@ -45,6 +73,11 @@ for you to check what the system is reading.
 
 ## Flask application
 
+Files:
+ * [flask_monitor.py](flask_monitor.py)
+ * [templates/](templates/)
+ * [static/](static/)
+
 To start the application and make it visible inside your network,
 you need to run:
 
@@ -57,6 +90,12 @@ and in some elements from **bootstrap** that can be found onf the `static`
 directory.
 
 ## Telegram bot
+
+Files:
+ * [telegram_bot.py](telegram_bot.py)
+ * [config.ini](#) Not included!
+ * [start_bot](start_bot)
+
 
 Due to some issues I had for my current system configuration,
 I created a small script to initialize the bot, called `start_bot`.
