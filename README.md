@@ -1,7 +1,7 @@
 # Plantaris
 # PyCon US 2020 :herb: :seedling: :yellow_heart: 🐍
 
-![plantaris logo](code/static/img/plantaris.jpg)
+![plantaris logo](code/static/img/plantaris.jpg | width=200)
 
 This repository contains all the information related to my PyConUS 2020
 talk entitled:
