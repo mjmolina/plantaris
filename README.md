@@ -1,4 +1,4 @@
-# Plantaris
+# Plantaris-IoT Project
 ## PyCon US 2020 :herb: :seedling: :yellow_heart: 🐍
 
 **How to build an intelligent “indoor garden” with microcontrollers,
