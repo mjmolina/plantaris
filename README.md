@@ -4,7 +4,7 @@
 ## **How to build an intelligent “indoor garden” with microcontrollers,
 CircuitPython, and IoT.**
 
-<img align="right" width="350" height="350" src="code/static/img/plantaris.jpg"/>
+<img align="right" width="400" height="400" src="code/static/img/plantaris.jpg"/>
 
 * You can watch the talk [here](https://youtu.be/8STo1-rRV1E)!.
 * Check the [code/](code/) directory to see all the examples used in the talk
