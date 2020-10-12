@@ -1,7 +1,7 @@
 # Plantaris
 ## PyCon US 2020 :herb: :seedling: :yellow_heart: 🐍
 
-**How to build an intelligent “indoor garden” with microcontrollers,
+## **How to build an intelligent “indoor garden” with microcontrollers,
 CircuitPython, and IoT.**
 
 <img align="right" width="350" height="350" src="code/static/img/plantaris.jpg"/>
